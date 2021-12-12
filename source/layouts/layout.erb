@@ -4,13 +4,25 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+    <title><%= current_page.data.title || "Delaware River Project" %></title>
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
   </head>
   <body>
+    <header>
+      <h1>
+        Delaware River Project
+      </h1>
+    </header>
+
+    <main>
     <%= yield %>
+    </main>
+
+    <footer>
+      &copy;2021 <a href="https://wallscorp.us/">Nathan L. Walls</a>
+    </footer>
   </body>
 </html>
