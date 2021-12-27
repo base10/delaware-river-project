@@ -11,7 +11,6 @@ body {
 
 a {
   color: rgba(#000, 0.7);
-
   &:focus,
   &:hover {
     color: rgba(#000, 0.6);
@@ -23,7 +22,10 @@ img {
   border-style: solid;
   border-width: 8px;
   display: block;
-  margin: 0.5, 0em;
+  height: auto;
+  margin: 0em, 0em;
+  max-width: 100%;
+  object-fit: scale-down;
 }
 
 figcaption {
@@ -31,7 +33,7 @@ figcaption {
   display: block;
   font-size: 0.75em;
   font-weight: light;
-  margin: 0.5em, 0em;
+  margin: 0.0em, 0em;
 }
 
 p {
